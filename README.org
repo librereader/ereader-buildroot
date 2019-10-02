@@ -8,9 +8,24 @@ Notes and configs for building a buildroot based Linux OS for ereaders.
    wget https://buildroot.org/downloads/buildroot-2019.02.5.tar.bz2
    tar xf buildroot-2019.02.5.tar.bz2
    cd buildroot-2019.02.5
+   export BR=$(pwd)
    cp ../kobo_aura_h2o_defconfig configs/
    make kobo_aura_h2o_defconfig
    make
+
+   # dd rootfs to sdcard
+
+   # mount rootfs
+   mount /dev/sdd1 /my/root/fs
+
+   wget https://www.kernel.org/pub/linux/kernel/projects/backports/stable/v3.14.22/backports-3.14.22-1.tar.xz
+   tar xf backports-3.14.22-1.tar.xz
+   cd backports-3.14.22-1
+
+   make ARCH=arm \
+      CROSS_COMPILE=$BR/output/host/bin/arm-buildroot-linux-musleabihf- \
+      KLIB_BUILD=$BR/output/build/linux-custom \
+      KLIB=/my/root/fs defconfig-brcmfmac install
 #+END_SRC
 
 ** OcherBook
