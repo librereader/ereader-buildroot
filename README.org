@@ -35,6 +35,6 @@ Notes and configs for building a buildroot based Linux OS for ereaders.
    - [[https://github.com/jdek/kobo-aura-h2o-linux][Kernel]] (mostly)
    - Display
    - Touchscreen
+   - OTG Gadgets: g_ether, g_mass_storage (unknown status)
    What doesn't?
    - WiFi
-   - OTG Gadget stuff
