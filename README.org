@@ -6,6 +6,11 @@ Notes and configs for building a buildroot based Linux OS for ereaders.
 
    https://buildroot.org/downloads/buildroot-2019.02.5.tar.bz2
 
+** OcherBook
+
+   Copy ~ocher_Makefile~ into the latest OcherBook master as ~Makefile~,
+   edit to point to your buildroot toolchain and ~make~.
+
 ** Supported devices
 *** Kobo Aura H2O
    What works?
