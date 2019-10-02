@@ -1,0 +1,18 @@
+* Buildroot
+
+Notes and configs for building a buildroot based Linux OS for ereaders.
+
+** Getting Started
+
+   https://buildroot.org/downloads/buildroot-2019.02.5.tar.bz2
+
+** Supported devices
+*** Kobo Aura H2O
+   What works?
+   - Booting
+   - Kernel (mostly)
+   - Display
+   - Touchscreen
+   What doesn't?
+   - WiFi
+   - OTG Gadget stuff
