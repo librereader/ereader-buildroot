@@ -4,7 +4,14 @@ Notes and configs for building a buildroot based Linux OS for ereaders.
 
 ** Getting Started
 
-   https://buildroot.org/downloads/buildroot-2019.02.5.tar.bz2
+#+BEGIN_SRC shell
+   wget https://buildroot.org/downloads/buildroot-2019.02.5.tar.bz2
+   tar xf buildroot-2019.02.5.tar.bz2
+   cd buildroot-2019.02.5
+   cp ../kobo_aura_h2o_defconfig configs/
+   make kobo_aura_h2o_defconfig
+   make
+#+END_SRC
 
 ** OcherBook
 
@@ -15,7 +22,7 @@ Notes and configs for building a buildroot based Linux OS for ereaders.
 *** Kobo Aura H2O
    What works?
    - Booting
-   - Kernel (mostly)
+   - [[https://github.com/jdek/kobo-aura-h2o-linux][Kernel]] (mostly)
    - Display
    - Touchscreen
    What doesn't?
