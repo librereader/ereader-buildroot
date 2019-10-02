@@ -9,7 +9,7 @@ Notes and configs for building a buildroot based Linux OS for ereaders.
    tar xf buildroot-2019.02.5.tar.bz2
    cd buildroot-2019.02.5
    export BR=$(pwd)
-   cp ../kobo_aura_h2o_defconfig configs/
+   ln -s ../kobo_aura_h2o_defconfig configs/
    make kobo_aura_h2o_defconfig
    make
 
