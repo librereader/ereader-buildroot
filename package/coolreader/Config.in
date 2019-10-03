@@ -1,0 +1,8 @@
+config BR2_PACKAGE_COOLREADER
+	bool "coolreader"
+	help
+	  coolreader
+	select BR2_PACKAGE_QT5BASE_GUI
+	select BR2_PACKAGE_QT5BASE_WIDGETS
+	select BR2_PACKAGE_QT5TOOLS
+	select BR2_PACKAGE_QT5TOOLS_LINGUIST_TOOLS

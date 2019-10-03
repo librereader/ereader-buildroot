@@ -1,0 +1,4 @@
+config BR2_PACKAGE_KOREADER
+	bool "koreader"
+	help
+	  Koreader
