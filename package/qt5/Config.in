@@ -58,6 +58,7 @@ endchoice
 
 source "package/qt5/qt53d/Config.in"
 source "package/qt5/qt5base/Config.in"
+source "package/qt5/qt5einkfb/Config.in"
 source "package/qt5/qt5canvas3d/Config.in"
 source "package/qt5/qt5charts/Config.in"
 source "package/qt5/qt5connectivity/Config.in"

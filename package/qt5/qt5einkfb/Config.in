@@ -1,0 +1,8 @@
+config BR2_PACKAGE_QT5EINKFB
+	bool "qt5einkfb"
+	help
+	  Qt is a cross-platform application and UI framework for
+	  developers using C++.
+
+	  This package corresponds to the framebuffer QPA platform
+	  plugin for E-Readers and E-Ink devices.
