@@ -1,0 +1,1 @@
+squid -1 squid -1 - /home/squid /bin/sh video,input E-reader user
